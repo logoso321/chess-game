@@ -12,7 +12,12 @@ class King < Piece
 	end
 
 	def valid_move?(start,finish)
-		return true
+		#if finish location is outside the board return false
+	    if(@@valid_choices.has_value?(finish))
+	    	return true
+		else
+			return false
+		end
 	end
 
 	

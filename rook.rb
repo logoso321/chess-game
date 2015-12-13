@@ -7,6 +7,7 @@ class Rook < Piece
 	end
 
 	def valid_move?(start,finish)
+		
 		return true
 	end
 
